@@ -1,0 +1,4 @@
+Nginx
+
+nginx -s reload  - reload config
+nginx -t  - config check valid

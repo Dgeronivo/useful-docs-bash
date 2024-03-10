@@ -1,0 +1,8 @@
+lpush key value    push to left
+flushdb -- clear current db
+flushall -- drop all
+
+redis-cli command
+redis-cli info keyspace
+redis-cli select <number_database>
+keys * - show all key

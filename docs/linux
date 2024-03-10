@@ -1,0 +1,15 @@
+#> check HD
+sudo df -h /
+du -sh dir
+sudo ncdu /
+#<
+
+#> clean HD
+1. check docker
+2. sudo du -sh /var/lib/snapd and run cleanSnap.sh
+3. clean sys logs cleanSysLogs.sh
+
+#> interest command
+rm $(ls -1t | tail -n -1000)
+ls | wc -l
+#<
