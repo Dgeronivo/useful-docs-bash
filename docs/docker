@@ -1,0 +1,11 @@
+Copy from local in container
+docker cp /path/dump.sql st_mysql:/
+
+#> the clearing
+docker image prune
+&&
+docker volume prune
+&&
+docker system prune -a (WARNING this drop all unused images and containers)
+#<
+

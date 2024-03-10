@@ -1,0 +1,31 @@
+     *    @OA\Get(
+     *      summary="description route bla bla",
+     *      parameters={
+     *          @OA\Parameter(
+     *               name="name",
+     *               in="path",
+     *               description="name desc",
+     *               required=true,
+     *               @OA\Schema(enum={"Alex", "Sergi"})
+     *           ),
+     *          @OA\Parameter(
+     *              name="age",
+     *              in="query",
+     *              description="user age",
+     *              allowEmptyValue=true,
+     *              @OA\Schema(type="integer", default="22")
+     *          )
+     *      },
+     *     responses={
+     *          @OA\Response(
+     *              description="Return model when success request",
+     *              response="200",
+     *              @OA\JsonContent(ref=@Model(type=ResponseSimpleModel::class, groups={"get"}))
+     *          ),
+     *          @OA\Response(
+     *              description="return primary type",
+     *              response="201",
+     *              @OA\JsonContent(@OA\Schema(type="string", example="STRING"))
+     *          )
+     *     }
+     * )

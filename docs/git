@@ -1,0 +1,8 @@
+git config --global core.filemode false
+git remote prune origin
+git branch -d $(git branch --merged)
+
+check user
+git config --list
+git config user.name "Alex"
+git config user.email "dgeronivo@gmail.com"
